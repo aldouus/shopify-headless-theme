@@ -8,13 +8,13 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "main": {
-      "type": "main-redirect",
-      "settings": {}
-    }
-  },
   "order": [
     "main"
-  ]
+  ],
+  "sections": {
+    "main": {
+      "settings": {},
+      "type": "main-redirect"
+    }
+  }
 }
