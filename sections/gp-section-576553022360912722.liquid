@@ -1258,37 +1258,7 @@
 
 }
       </style>
-    <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--mb:8px" class="gJN__1qLrI ">
-      
-    <div
-      
-      style="--ta:left"
-    >
-      <div class="sealsubs-target-element" data-handle="{{ product.handle }}"></div>
-    </div>
-    <script>
-      const moneyFormatGp = {{ shop.money_format | json }};
-      document.addEventListener('DOMContentLoaded', function() {
-        document.addEventListener('sealsubs:price_update', function(data) {
-          const subPrice = data?.detail?.price || 0
-          const gpPriceElement = data.detail?.element?.closest('gp-product')?.querySelector('gp-product-price .gp-price.gp-money');
-          const compareAtPriceElement = data.detail?.element?.closest('gp-product')?.querySelector('gp-product-price .gp-product-compare-price');
-
-          if (gpPriceElement) {
-            gpPriceElement.innerHTML = Shopify?.formatMoney(subPrice, moneyFormatGp);
-          }
-
-          if (compareAtPriceElement) {
-            const compareAtPrice = data?.detail?.compareAtPrice || 0
-            setTimeout(function() {
-              compareAtPriceElement.innerHTML = Shopify?.formatMoney(compareAtPrice, moneyFormatGp);
-            });
-          }
-        });
-      });
-    </script>
-  
-      </div>
+    
    {%- liquid
       assign inventory_quantity = variant.inventory_quantity | default: 0
     -%}
