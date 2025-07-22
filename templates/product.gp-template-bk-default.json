@@ -8,13 +8,21 @@
  * ------------------------------------------------------------
  */
 {
-  "order": [
-    "main"
-  ],
   "sections": {
+    "gp_shopify_original_section_576553022360912722": {
+      "type": "gp-section-576553022360912722",
+      "settings": {
+        "section_preload": "true",
+        "checksum": ""
+      }
+    },
     "main": {
-      "settings": {},
-      "type": "main-redirect"
+      "type": "main-redirect",
+      "settings": {}
     }
-  }
+  },
+  "order": [
+    "main",
+    "gp_shopify_original_section_576553022360912722"
+  ]
 }
